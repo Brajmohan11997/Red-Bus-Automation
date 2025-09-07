@@ -56,7 +56,7 @@ public class RedBusAutomation {
         }
 
         WebElement searchBuses =
-                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class,'primaryButton___0dc9db searchButtonWrapper')]")));
+                wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(@class,'primaryButton')]")));
                 searchBuses.click();
         WebElement totalSize =
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"busesFoundText__ind-search-styles-module-scss-PHVGD\"]")));
@@ -87,3 +87,4 @@ public class RedBusAutomation {
 
     }
 }
+
